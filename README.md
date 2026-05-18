@@ -1,4 +1,4 @@
-# Royal Group Request & Approval Management System
+# Request & Approval Management System
 
 Production-oriented MERN stack request workflow application for employees and managers.
 
