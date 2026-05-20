@@ -19,7 +19,7 @@ export const LoginPage = () => {
     formState: { errors }
   } = useForm({
     resolver: yupResolver(loginSchema),
-    defaultValues: { email: "employee@royalgroup.local", password: "Password123" }
+    defaultValues: { email: "employee@yopmail.com", password: "Password123" }
   });
 
   if (token && user) return <Navigate to={`/${user.role}/dashboard`} replace />;
@@ -47,8 +47,8 @@ export const LoginPage = () => {
           </Button>
         </div>
         <div className="mt-5 rounded-md bg-slate-50 p-3 text-xs text-slate-600">
-          Employee: employee@royalgroup.local / Password123<br />
-          Manager: manager@royalgroup.local / Password123
+          Employee: employee@yopmail.com / Password123<br />
+          Manager: manager@yopmail.com / Password123
         </div>
       </form>
     </div>
