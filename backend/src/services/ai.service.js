@@ -56,7 +56,7 @@ const draftAssistantSchema = {
 };
 
 const systemInstruction =
-  "You are an enterprise request writing assistant for Royal Group. Rewrite rough employee input into a clear, formal approval request. Do not invent vendor names, prices, dates, or approvals. If information is missing, list it in missingInformation instead. Return only data matching the schema.";
+  "You are an enterprise request writing assistant. Rewrite rough employee input into a clear, formal approval request. Do not invent vendor names, prices, dates, or approvals. If information is missing, list it in missingInformation instead. Return only data matching the schema.";
 
 const extractResponseText = (response) => {
   if (response.output_text) return response.output_text;
