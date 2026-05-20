@@ -11,6 +11,7 @@ Production-oriented MERN stack request workflow application for employees and ma
 - Secure attachment upload and authenticated download
 - Email notification service with notification logging
 - Dynamic PDF generation with PDFKit
+- AI Request Draft Assistant for employees
 - React dashboard UI with protected and role-based routing
 - Tailwind CSS, Redux Toolkit, React Hook Form, Yup, Axios, React Quill, and toast notifications
 
@@ -60,6 +61,16 @@ Employee: employee@royalgroup.local / Password123
 Manager:  manager@royalgroup.local / Password123
 ```
 
+AI setup:
+
+```env
+AI_PROVIDER=gemini
+GEMINI_API_KEY=your-gemini-api-key
+GEMINI_MODEL=gemini-2.5-flash
+```
+
+The AI key belongs only in `backend/.env`. The frontend calls the protected backend endpoint and never receives the API key.
+
 ## API Summary
 
 - `POST /api/auth/login`
@@ -76,6 +87,7 @@ Manager:  manager@royalgroup.local / Password123
 - `GET /api/requests/:id/pdf`
 - `GET /api/dashboard/employee`
 - `GET /api/dashboard/manager`
+- `POST /api/ai/request-draft`
 
 ## Workflow
 

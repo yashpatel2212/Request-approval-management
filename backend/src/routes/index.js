@@ -4,6 +4,7 @@ import userRoutes from "./user.routes.js";
 import requestRoutes from "./request.routes.js";
 import dashboardRoutes from "./dashboard.routes.js";
 import notificationRoutes from "./notification.routes.js";
+import aiRoutes from "./ai.routes.js";
 
 const router = Router();
 
@@ -16,5 +17,6 @@ router.use("/users", userRoutes);
 router.use("/requests", requestRoutes);
 router.use("/dashboard", dashboardRoutes);
 router.use("/notifications", notificationRoutes);
+router.use("/ai", aiRoutes);
 
 export default router;

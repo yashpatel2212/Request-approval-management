@@ -19,6 +19,15 @@ export const env = {
   clientUrl: process.env.CLIENT_URL || "http://localhost:5173",
   uploadDir: process.env.UPLOAD_DIR || "uploads",
   maxFileSizeMb: Number(process.env.MAX_FILE_SIZE_MB || 10),
+  aiProvider: process.env.AI_PROVIDER || "gemini",
+  gemini: {
+    apiKey: process.env.GEMINI_API_KEY,
+    model: process.env.GEMINI_MODEL || "gemini-2.5-flash"
+  },
+  openai: {
+    apiKey: process.env.OPENAI_API_KEY,
+    model: process.env.OPENAI_MODEL || "gpt-5.4-mini"
+  },
   mail: {
     host: process.env.SMTP_HOST,
     port: Number(process.env.SMTP_PORT || 587),

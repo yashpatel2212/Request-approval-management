@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .env
-.env.example
+backend/.env.example
+frontend/.env.example
 uploads/
 *.log
