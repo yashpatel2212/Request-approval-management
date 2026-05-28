@@ -1,0 +1,5 @@
+npm_modules
+npm-debug.log
+.env
+uploads
+*.log
